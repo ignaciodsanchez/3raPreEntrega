@@ -1,1 +1,72 @@
-@import "../scss/componentes/footer"
+// mis variables
+$micolor1: rgb(31, 114, 240);
+$micolor2: rgb(30, 30, 102);
+$micolor3: white;
+$textosombra: 2px 2px 2px rgb(255, 255, 255);
+$img1: url(../img/ola1.jpg);
+$parrafosize: 20px;
+
+// cuerpo
+
+h1 {
+    color: $micolor2;
+    text-align: center;
+    text-shadow: $textosombra;
+}
+
+p {
+    text-align: center;
+    color: $micolor2;
+    font-size: $parrafosize;
+}
+
+body{
+    background-color: $micolor1;
+}
+
+.jumbotrom{
+    height: 400px;
+    background-color: $micolor2;
+    text-align: center;
+    background-image: $img1;
+    background-position: center;
+    background-size: cover;
+}
+
+.jumbotrom p{
+    color: $micolor2;
+    text-shadow: $textosombra;
+}
+
+.button1{
+    background-color: $micolor1;
+    color: $micolor3;
+}
+
+.nav-link{
+    color: $micolor3;
+}
+
+.nav-item:hover{
+    background-color: $micolor2;
+    border-radius: 7px;
+}
+
+.navbar{
+    background-color: $micolor2;
+    font-size: $parrafosize;
+}
+
+h2{
+    background-color: $micolor1;
+    text-align: center;
+    color: $micolor2;
+    padding: 15px;
+    margin: 0;
+    text-shadow: $textosombra;
+}
+
+footer{
+    text-align: center;
+}
+
