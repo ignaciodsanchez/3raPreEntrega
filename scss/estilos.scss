@@ -10,6 +10,7 @@
 $micolor1: rgb(31, 114, 240);
 $micolor2: rgb(30, 30, 102);
 $micolor3: white;
+$micolor4: rgb(32, 32, 164);
 $textosombra: 2px 2px 2px rgb(255, 255, 255);
 $img1: url(../img/ola1.jpg);
 $img4: url(../img/ola4.jpg);
@@ -76,23 +77,29 @@ body{
     font-size: $parrafosize;
 }
 
+// mixin y calculos
+
+@mixin estilo ($color, $fontsize){
+    color: $color;
+    font-size: $fontsize;
+}
+
 h2{
-    background-color: $micolor1;
+    @include estilo (rgb(30, 30, 102), 30px);
+    background-color: $micolor4;
     text-align: center;
-    color: $micolor2;
     padding: calc($var3*2);
     margin: 0;
     text-shadow: $textosombra;
 }
 
 h3 {
-    background-color: $micolor1;
+    @include estilo(rgb(17, 17, 58), 35px);
+    background-color: $micolor4;
     text-align: center;
-    color: $micolor2;
     padding: calc($var3*2);
     margin: 0;
     text-shadow: $textosombra;
-
 }
 
 .nleft{
@@ -114,15 +121,17 @@ h3 {
     text-align: center;
 }
 
-
+// agrego fondo degrade 
 section{
     text-align: center;
-    background-color: $micolor1;
+    background-image: linear-gradient($micolor1, $micolor2);
 }
 
 footer{
     text-align: center;
     text-shadow: $textosombra;
     color: $micolor2;
+    background-image: linear-gradient($micolor1, $micolor2);
+    font-size: $parrafosize;
 }
 

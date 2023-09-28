@@ -55,18 +55,20 @@ body {
 }
 
 h2 {
-  background-color: rgb(31, 114, 240);
-  text-align: center;
   color: rgb(30, 30, 102);
+  font-size: 30px;
+  background-color: rgb(32, 32, 164);
+  text-align: center;
   padding: 14px;
   margin: 0;
   text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 
 h3 {
-  background-color: rgb(31, 114, 240);
+  color: rgb(17, 17, 58);
+  font-size: 35px;
+  background-color: rgb(32, 32, 164);
   text-align: center;
-  color: rgb(30, 30, 102);
   padding: 14px;
   margin: 0;
   text-shadow: 2px 2px 2px rgb(255, 255, 255);
@@ -92,11 +94,13 @@ h3 {
 
 section {
   text-align: center;
-  background-color: rgb(31, 114, 240);
+  background-image: linear-gradient(rgb(31, 114, 240), rgb(30, 30, 102));
 }
 
 footer {
   text-align: center;
   text-shadow: 2px 2px 2px rgb(255, 255, 255);
   color: rgb(30, 30, 102);
+  background-image: linear-gradient(rgb(31, 114, 240), rgb(30, 30, 102));
+  font-size: 20px;
 }/*# sourceMappingURL=estilos.css.map */
