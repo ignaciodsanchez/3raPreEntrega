@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Roboto+Slab&family=Seaweed+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mooli", sans-serif;
+}
+
 h1 {
   color: rgb(30, 30, 102);
   text-align: center;

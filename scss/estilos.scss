@@ -1,12 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto+Slab&family=Seaweed+Script&display=swap');
+
+// font-family: 'Mooli', sans-serif;
+// font-family: 'Roboto Slab', serif;
+// font-family: 'Seaweed Script', cursive;
+
+
 // mis variables
 $micolor1: rgb(31, 114, 240);
 $micolor2: rgb(30, 30, 102);
 $micolor3: white;
 $textosombra: 2px 2px 2px rgb(255, 255, 255);
 $img1: url(../img/ola1.jpg);
+$img4: url(../img/ola4.jpg);
 $parrafosize: 20px;
+$fuente1: 'Mooli', sans-serif;
+$var1: 400px;
+$var2: 50px;
+$var3: 7px;
 
 // cuerpo
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $fuente1;
+}
 
 h1 {
     color: $micolor2;
@@ -25,7 +44,7 @@ body{
 }
 
 .jumbotrom{
-    height: 400px;
+    height: $var1;
     background-color: $micolor2;
     text-align: center;
     background-image: $img1;
@@ -49,7 +68,7 @@ body{
 
 .nav-item:hover{
     background-color: $micolor2;
-    border-radius: 7px;
+    border-radius: $var3;
 }
 
 .navbar{
@@ -61,12 +80,49 @@ h2{
     background-color: $micolor1;
     text-align: center;
     color: $micolor2;
-    padding: 15px;
+    padding: calc($var3*2);
     margin: 0;
     text-shadow: $textosombra;
 }
 
+h3 {
+    background-color: $micolor1;
+    text-align: center;
+    color: $micolor2;
+    padding: calc($var3*2);
+    margin: 0;
+    text-shadow: $textosombra;
+
+}
+
+.nleft{
+    height: $var1 + $var2;
+    background-image: $img4;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.button1{
+    background-color: $micolor2;
+    color: $micolor3;
+}
+
+
+.nright{
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+section{
+    text-align: center;
+    background-color: $micolor1;
+}
+
 footer{
     text-align: center;
+    text-shadow: $textosombra;
+    color: $micolor2;
 }
 
